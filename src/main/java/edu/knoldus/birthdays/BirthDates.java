@@ -9,11 +9,11 @@ public class BirthDates {
         ArrayList<String> birthDays = new ArrayList<>();
         try {
             //14-06-93  10-03-2018
-            while(date.isBefore(LocalDate.now())) {
-                if(date.getYear() == LocalDate.now().getYear()) {
-                    if(LocalDate.now().getDayOfYear()
+            while (date.isBefore(LocalDate.now())) {
+                if (date.getYear() == LocalDate.now().getYear()) {
+                    if (LocalDate.now().getDayOfYear()
                             > date.getDayOfYear()) {
-                        birthDays.add (date.getDayOfWeek().name());
+                        birthDays.add(date.getDayOfWeek().name());
                         date = date.plus(1, ChronoUnit.YEARS);
                     } else {
                         date = date.plus(1, ChronoUnit.YEARS);
@@ -23,7 +23,7 @@ public class BirthDates {
                     date = date.plus(1, ChronoUnit.YEARS);
                 }
             }
-        } catch(Exception e) {
+        } catch (Exception e) {
             throw new Exception("you are not born yet");
         }
         return birthDays;

@@ -18,7 +18,7 @@ public class DatesImplementation {
         System.out.println("all birthdays till date : " + allBirthDates);
         // ZONE TIMINGS
         String zoneTime = zone.differentTimeZones("Europe/Paris");
-        System.out.println("time in provided zone is : "+zoneTime );
+        System.out.println("time in provided zone is : " + zoneTime);
         // GANDHIJI'S LIFE DURATION IN SECONDS
         LocalDateTime birthDate = LocalDateTime.of(1869, 10, 02, 12, 0, 0);
         LocalDateTime deathDate = LocalDateTime.of(1948, 01, 30, 23, 59, 59);
